@@ -1,0 +1,37 @@
+# generated files
+dist/
+/src/modules/*.css
+/src/modules/*/*.css
+/src/modules/*/*/*.css
+/src/styles/*.css
+/src/common/**/*.css
+/src/common/**/*.css
+**/coverage/
+
+# dependencies
+/node_modules
+packages/**/node_modules
+
+# testing
+/coverage
+
+# production
+/build
+
+# IDE, Texteditors
+.vscode
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log
+
+# Local Netlify folder
+.netlify

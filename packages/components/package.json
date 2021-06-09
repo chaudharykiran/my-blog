@@ -1,0 +1,128 @@
+{
+  "private": true,
+  "name": "@rsn/components",
+  "version": "1.0.0",
+  "main": "src/index.tsx",
+  "main:src": "src/index.tsx",
+  "scripts": {
+    "test": "react-scripts test",
+    "lint": "eslint ./src/**/*.tsx --max-warnings=0 --format=codeframe"
+  },
+  "dependencies": {
+    "@react-workspaces/react-scripts": "3.4.0-alpha-01",
+    "@storybook/react": "^5.2.8",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.4.0",
+    "@testing-library/user-event": "^8.0.3",
+    "@types/jest": "^24.0.25",
+    "@types/node": "^13.1.6",
+    "@types/react": "^16.9.17",
+    "@types/react-dom": "^16.9.4",
+    "@typescript-eslint/eslint-plugin": "^2.15.0",
+    "@typescript-eslint/parser": "^2.15.0",
+    "react": "17.0.0",
+    "react-dom": "^16.12.0",
+    "typescript": "~3.7.4"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^11.1.1"
+  },
+  "eslintConfig": {
+    "parser": "@typescript-eslint/parser",
+    "extends": [
+      "react-app",
+      "plugin:prettier/recommended",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "useJSXTextNode": true,
+      "ecmaVersion": 2017,
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "modules": true,
+        "jsx": true
+      }
+    },
+    "env": {
+      "es6": true,
+      "browser": true,
+      "node": true
+    },
+    "plugins": [
+      "prettier",
+      "react",
+      "@typescript-eslint",
+      "react-hooks"
+    ],
+    "rules": {
+      "prettier/prettier": [
+        "error",
+        {
+          "singleQuote": true
+        }
+      ],
+      "key-spacing": [
+        1,
+        {
+          "mode": "strict"
+        }
+      ],
+      "keyword-spacing": [
+        1,
+        {}
+      ],
+      "no-multi-spaces": 1,
+      "no-irregular-whitespace": 1,
+      "react/jsx-closing-bracket-location": 1,
+      "react/jsx-equals-spacing": 1,
+      "react/jsx-no-undef": 1,
+      "react-hooks/rules-of-hooks": "error",
+      "react-hooks/exhaustive-deps": "warn",
+      "react/no-unused-prop-types": 1,
+      "@typescript-eslint/explicit-function-return-type": "off",
+      "@typescript-eslint/indent": [
+        "error",
+        2
+      ],
+      "no-unused-vars": "warn",
+      "@typescript-eslint/no-unused-vars": [
+        "error"
+      ],
+      "@typescript-eslint/member-delimiter-style": "off"
+    },
+    "overrides": [
+      {
+        "files": [
+          "*.ts",
+          "*.tsx,",
+          "*.js",
+          "*.jsx"
+        ],
+        "rules": {
+        }
+      }
+    ]
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{ts,tsx}",
+      "!src/setupTests.{ts,tsx}",
+      "!src/serviceWorker.{ts,jsx}",
+      "!src/**/*.(spec|test|stories).{ts,tsx}"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "statements": 98,
+        "branches": 98,
+        "functions": 98,
+        "lines": 98
+      }
+    }
+  }
+}
