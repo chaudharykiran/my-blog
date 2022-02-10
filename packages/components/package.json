@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "@rsn/components",
+  "name": "@blog/components",
   "version": "1.0.0",
   "main": "src/index.tsx",
   "main:src": "src/index.tsx",
@@ -20,6 +20,7 @@
     "@types/react-dom": "^16.9.4",
     "@typescript-eslint/eslint-plugin": "^2.15.0",
     "@typescript-eslint/parser": "^2.15.0",
+    "classnames": "^2.3.1",
     "react": "17.0.0",
     "react-dom": "^16.12.0",
     "typescript": "~3.7.4"
@@ -98,8 +99,7 @@
           "*.js",
           "*.jsx"
         ],
-        "rules": {
-        }
+        "rules": {}
       }
     ]
   },

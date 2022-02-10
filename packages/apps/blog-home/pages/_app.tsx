@@ -3,7 +3,6 @@ import Head from 'next/head'
 import { MDXProvider } from '@mdx-js/react'
 import { ThemeProvider } from '@material-ui/core/styles'
 import CssBaseline from '@material-ui/core/CssBaseline'
-import Box from '@material-ui/core/Box'
 
 import theme from '../src/theme'
 
@@ -27,9 +26,7 @@ const MyApp = (props: any) => {
       <MDXProvider components={{}}>
         <ThemeProvider theme={theme}>
           <CssBaseline />
-          <Box margin={4}>
-            <Component {...pageProps} />
-          </Box>
+          <Component {...pageProps} />
         </ThemeProvider>
       </MDXProvider>
     </>

@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
-const withTM = require('next-transpile-modules')(['@rsn/components'])
+const withTM = require('next-transpile-modules')(['@blog/components'])
 const withMDX = require('@next/mdx')({
   extension: /\.mdx$/,
 })

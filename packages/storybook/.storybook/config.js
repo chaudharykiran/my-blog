@@ -7,7 +7,7 @@ addParameters({
   },
 });
 
-const comps = require.context('@rsn/components/src', true, /.stories.tsx$/);
+const comps = require.context('@blog/components/src', true, /.stories.tsx$/);
 
 configure(() => {
   comps.keys().forEach(filename => comps(filename));
