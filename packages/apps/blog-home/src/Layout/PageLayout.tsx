@@ -1,6 +1,8 @@
 import React from 'react'
 
-import Grid from '@material-ui/core/Grid'
+import Grid from '@mui/material/Grid'
+import Box from '@mui/material/Box'
+
 import LeftSideNavigation from '../LeftNavigation/LeftNavigation'
 
 interface Props {
@@ -11,12 +13,14 @@ function PageLayout(props: Props) {
   const { children } = props
 
   return (
-    <Grid container spacing={4}>
-      <Grid item>
-        <LeftSideNavigation />
+    <Box pt={2}>
+      <Grid container spacing={4}>
+        <Grid item>
+          <LeftSideNavigation />
+        </Grid>
+        <Grid item>{children}</Grid>
       </Grid>
-      <Grid item>{children}</Grid>
-    </Grid>
+    </Box>
   )
 }
 

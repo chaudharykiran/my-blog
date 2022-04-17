@@ -1,24 +1,21 @@
 import React from 'react'
 import Head from 'next/head'
 import { MDXProvider } from '@mdx-js/react'
-import { ThemeProvider } from '@material-ui/core/styles'
-import CssBaseline from '@material-ui/core/CssBaseline'
+import { ThemeProvider } from '@mui/material/styles'
+import CssBaseline from '@mui/material/CssBaseline'
+import { CacheProvider } from '@emotion/react'
 
 import theme from '../src/theme'
+import createEmotionCache from '../src/createEmotionCache'
 
+const clientSideEmotionCache = createEmotionCache()
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const MyApp = (props: any) => {
-  const { Component, pageProps } = props
-
-  React.useEffect(() => {
-    // Remove the server-side injected CSS.
-    const jssStyles = document.querySelector('#jss-server-side')
-    if (jssStyles) {
-      jssStyles.parentElement.removeChild(jssStyles)
-    }
-  }, [])
+  const { Component, pageProps, emotionCache = clientSideEmotionCache } = props
 
   return (
-    <>
+    <CacheProvider value={emotionCache}>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
       </Head>
@@ -29,7 +26,7 @@ const MyApp = (props: any) => {
           <Component {...pageProps} />
         </ThemeProvider>
       </MDXProvider>
-    </>
+    </CacheProvider>
   )
 }
 

@@ -2,8 +2,8 @@ import React from 'react'
 import { getPostSlugs } from 'src/utils/getLatestContent'
 import MDX from '@mdx-js/runtime'
 
-import Container from '@material-ui/core/Container'
-import Typography from '@material-ui/core/Typography'
+import Container from '@mui/material/Container'
+import Typography from '@mui/material/Typography'
 
 import ArticleLayout from 'src/Layout/ArticleLayout'
 

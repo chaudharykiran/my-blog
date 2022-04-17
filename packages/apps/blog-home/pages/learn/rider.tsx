@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Container from '@material-ui/core/Container'
+import Container from '@mui/material/Container'
 
 import Box from '@blog/components/src/Box/Box'
 

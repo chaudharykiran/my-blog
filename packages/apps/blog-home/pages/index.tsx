@@ -1,12 +1,12 @@
 import React from 'react'
 import MDX from '@mdx-js/runtime'
 
-import useMediaQuery from '@material-ui/core/useMediaQuery'
-import { useTheme } from '@material-ui/core/styles'
-import Container from '@material-ui/core/Container'
-import Link from '@material-ui/core/Link'
-import Typography from '@material-ui/core/Typography'
-import Box from '@material-ui/core/Box'
+import useMediaQuery from '@mui/material/useMediaQuery'
+import { useTheme } from '@mui/material/styles'
+import Container from '@mui/material/Container'
+import Link from '@mui/material/Link'
+import Typography from '@mui/material/Typography'
+import Box from '@mui/material/Box'
 
 import PageLayout from 'src/Layout/PageLayout'
 import { getPostSlugs } from 'src/utils/getLatestContent'
@@ -20,14 +20,14 @@ function Home(props: any) {
     <Container maxWidth={isLargeScreen ? 'md' : 'sm'}>
       <PageLayout>
         {posts.map(post => (
-          <div key={post.slug}>
+          <React.Fragment key={post.slug}>
             <Typography variant="subtitle1">
               <Link href={`/posts/${post.slug}`}>
                 <Box fontWeight="fontWeightRegular">{post.data.title}</Box>
               </Link>
             </Typography>
             <MDX>{post.content}</MDX>
-          </div>
+          </React.Fragment>
         ))}
       </PageLayout>
     </Container>

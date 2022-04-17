@@ -26,13 +26,14 @@
     "strict": false,
     "suppressImplicitAnyIndexErrors": true
   },
-  "exclude": ["node_modules"],
+  "exclude": [
+    "node_modules"
+  ],
   "include": [
     "src",
     "../../components/src/hooks",
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "pages/api/auth/[...nextAuth].js"
   ]
 }

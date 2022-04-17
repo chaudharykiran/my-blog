@@ -1,10 +1,10 @@
 import React from 'react'
 
 import makeStyles from '@material-ui/core/styles/makeStyles'
-import Avatar from '@material-ui/core/Avatar'
-import Chip from '@material-ui/core/Chip'
-import StarIcon from '@material-ui/icons/Star'
-import Box from '@material-ui/core/Box'
+import Avatar from '@mui/material/Avatar'
+import Chip from '@mui/material/Chip'
+import Box from '@mui/material/Box'
+import StarIcon from '@mui/icons-material/Star'
 
 const useStyles = makeStyles(theme => ({
   large: {

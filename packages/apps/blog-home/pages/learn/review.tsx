@@ -1,8 +1,8 @@
 import React from 'react'
 
-import Typography from '@material-ui/core/Typography'
-import Avatar from '@material-ui/core/Avatar'
-import Chip from '@material-ui/core/Chip'
+import Typography from '@mui/material/Typography'
+import Avatar from '@mui/material/Avatar'
+import Chip from '@mui/material/Chip'
 
 import Box from '@blog/components/src/Box/Box'
 

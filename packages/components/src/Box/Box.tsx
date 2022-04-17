@@ -2,7 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 
 import makeStyles from '@material-ui/core/styles/makeStyles'
-import { default as MaterialBox, BoxProps as MaterialBoxProps } from '@material-ui/core/Box'
+import { default as MaterialBox, BoxProps as MaterialBoxProps } from '@mui/material/Box'
 
 const useStyles = makeStyles(theme => ({
   gap: {

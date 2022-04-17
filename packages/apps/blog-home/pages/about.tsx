@@ -4,10 +4,10 @@ import path from 'path'
 import matter from 'gray-matter'
 import MDX from '@mdx-js/runtime'
 
-import useMediaQuery from '@material-ui/core/useMediaQuery'
-import { useTheme } from '@material-ui/core/styles'
-import Container from '@material-ui/core/Container'
-import Typography from '@material-ui/core/Typography'
+import useMediaQuery from '@mui/material/useMediaQuery'
+import { useTheme } from '@mui/material/styles'
+import Container from '@mui/material/Container'
+import Typography from '@mui/material/Typography'
 
 import PageLayout from 'src/Layout/PageLayout'
 
